@@ -5,10 +5,10 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Enable CORS (Modify origin for CORS testing)
 const corsOptions = {
-    origin: "https://your-allowed-site.com", // Change this for CORS testing
+    origin: "https://mango-cliff-09465fc00.6.azurestaticapps.net", 
     methods: ["GET"],
+    allowedHeaders: ["Content-Type"]
 };
 
 app.use(cors(corsOptions));
